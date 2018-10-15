@@ -1,0 +1,5 @@
+node_modules/**/*
+.expo/*
+npm-debug.*
+env.js
+.DS_Store

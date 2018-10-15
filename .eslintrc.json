@@ -1,0 +1,16 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier", "redux-saga"],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "off",
+    "semi": "off",
+    "semi-style": "off"
+  }
+}

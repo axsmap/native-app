@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "axsmap",
+    "slug": "axsmap",
+    "sdkVersion": "30.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAwPyX5_vFsbklNhiQAqIPhzywNrUxyr8s"
+        }
+      },
+      "package": "com.axsmap",
+      "permissions": ["android.permission.ACCESS_NETWORK_STATE"],
+      "versionCode": 1
+    },
+    "ios": {
+      "config": {
+        "googleMapsApiKey": "AIzaSyAwPyX5_vFsbklNhiQAqIPhzywNrUxyr8s"
+      },
+      "supportsTablet": true
+    }
+  }
+}

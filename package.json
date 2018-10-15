@@ -1,0 +1,73 @@
+{
+  "name": "native-app",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "android": "expo start --android",
+    "cmt": "git-cz",
+    "eject": "expo eject",
+    "ios": "expo start --ios",
+    "start": "expo start"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "expo": "30.0.1",
+    "i18next": "11.9.1",
+    "jwt-decode": "2.2.0",
+    "lodash": "4.17.11",
+    "polished": "2.2.0",
+    "prop-types": "15.6.2",
+    "react": "16.3.1",
+    "react-i18next": "8.0.7",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-native-modal-datetime-picker": "6.0.0",
+    "react-native-offline": "3.14.1",
+    "react-native-size-matters": "0.1.4",
+    "react-native-svg": "7.1.2",
+    "react-navigation": "2.18.0",
+    "react-redux": "5.0.7",
+    "redux": "4.0.1",
+    "redux-persist": "5.10.0",
+    "redux-persist-transform-filter": "0.0.18",
+    "redux-saga": "0.16.2",
+    "reselect": "4.0.0",
+    "styled-components": "3.4.10",
+    "toggle-switch-react-native": "2.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.3",
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-react": "7.9.1",
+    "eslint-plugin-redux-saga": "0.9.0",
+    "husky": "1.0.0-rc.13",
+    "lint-staged": "7.2.0",
+    "prettier": "1.13.7"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --trailing-comma none --tab-width=2 --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
