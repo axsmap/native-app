@@ -8,9 +8,7 @@
     "es6": true
   },
   "rules": {
-    "react/jsx-filename-extension": "off",
-    "react/prefer-stateless-function": "off",
-    "semi": "off",
-    "semi-style": "off"
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off"
   }
 }
