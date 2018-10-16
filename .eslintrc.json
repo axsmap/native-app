@@ -8,7 +8,9 @@
     "es6": true
   },
   "rules": {
+    "global-require": "off",
     "import/prefer-default-export": "off",
+    "react/forbid-prop-types": "off",
     "react/jsx-filename-extension": "off"
   }
 }

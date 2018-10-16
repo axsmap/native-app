@@ -12,6 +12,19 @@ const GET_PROFILE = 'native-app/app/GET_PROFILE';
 const SET_IS_SENDING = 'native-app/app/SET_IS_SENDING';
 const SET_PROFILE = 'native-app/app/SET_PROFILE';
 
+// Actions creators
+export function getProfile(navigate) {
+  return { type: GET_PROFILE, payload: { navigate } };
+}
+
+export function setIsSending(isSending) {
+  return { type: SET_IS_SENDING, payload: { isSending } };
+}
+
+export function setProfile(profile) {
+  return { type: SET_PROFILE, payload: { profile } };
+}
+
 // Reducer
 const initialState = {
   isConnected: true,
@@ -33,19 +46,6 @@ export function appReducer(state = initialState, action) {
     default:
       return state;
   }
-}
-
-// Actions creators
-export function getProfile(navigate) {
-  return { type: GET_PROFILE, payload: { navigate } };
-}
-
-export function setIsSending(isSending) {
-  return { type: SET_IS_SENDING, payload: { isSending } };
-}
-
-export function setProfile(profile) {
-  return { type: SET_PROFILE, payload: { profile } };
 }
 
 // Selector
